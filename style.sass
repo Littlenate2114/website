@@ -37,8 +37,12 @@ body
       border-bottom: #BEC3C7 solid 1px
   li a.active
     border-bottom: 1px solid white
+
+@media screen and (max-width: 700px)
+  .navigation
+    display: none
+
 .heading-content
-  // text-align: center
   width: 100%
   height: auto
   padding: 50px
@@ -65,24 +69,38 @@ body
     &:hover
       background-color: white
       color: black
-.about
-  display: flex
-  width: 100%
-  height: 200px
-  background-color: #f7f8f9
-  align-items: center
-  justify-content: center
-  flex-direction: column
-  .aboutsec
+@media screen and (min-width:700px)
+  .heading-content
+    img
+      display: none
+@media screen and (max-width: 700px)
+  .heading-content
     text-align: center
-    height: auto
-    width: 400px
-    h1
-      font-weight: lighter
-      margin-bottom: 0
-      color: #016cdd
-    p
-      margin-top: 5px
-      color: #333f48
+    padding: 20px
     a
-      text-decoration: none
+      top: 30px
+      padding: 15px 35px
+    h1
+      font-size: 28px
+    p
+      font-size: 13px
+.more-info
+  width: 100%
+  height: auto
+  padding: 20px
+  box-sizing: border-box
+  background-color: #F5F7FA
+  h1
+    font-weight: lighter
+.hosting
+  width: 100%
+  height: auto
+  background-color: white
+  border: 2px solid #1296F7
+  border-radius: 20px
+  .hostingbody
+    margin: 10px
+    box-sizing: border-box
+    text-align: center
+  p
+    margin: 0
