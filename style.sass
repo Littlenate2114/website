@@ -47,6 +47,7 @@ body
   height: auto
   padding: 50px
   box-sizing: border-box
+  text-align: center
   h1
     color: white
     margin: 0
@@ -75,7 +76,6 @@ body
       display: none
 @media screen and (max-width: 700px)
   .heading-content
-    text-align: center
     padding: 20px
     a
       top: 30px
@@ -87,20 +87,65 @@ body
 .more-info
   width: 100%
   height: auto
-  padding: 20px
+  padding: 30px
   box-sizing: border-box
-  background-color: #F5F7FA
+  background-color:#1879E6
+  text-align: center
+  color: white
   h1
     font-weight: lighter
-.hosting
-  width: 100%
-  height: auto
+.infos
+  justify-content: center
+  display: flex
+.info
+  font-size: 13px
+  margin-right: 10px
+  color: black
   background-color: white
-  border: 2px solid #1296F7
-  border-radius: 20px
-  .hostingbody
-    margin: 10px
+  border-radius: 5px
+  padding: 25px
+  box-sizing: border-box
+  a
+    text-decoration: none
+    display: inherit
+    padding: 15px 20px
+    color: #4F8EF7
     box-sizing: border-box
-    text-align: center
-  p
-    margin: 0
+    border-radius: 5px
+    border: solid #4F8EF7 2px
+    font-size: 15px
+    transition: all 0.3s
+    &:hover
+      background-color: #4F8EF7
+      color: white
+.info3
+  font-size: 13px
+  color: black
+  background-color: white
+  box-sizing: border-box
+  border-radius: 5px
+  padding: 25px
+  box-sizing: border-box
+  a
+    text-decoration: none
+    display: inherit
+    padding: 15px 20px
+    color: #4F8EF7
+    box-sizing: border-box
+    border-radius: 5px
+    border: solid #4F8EF7 2px
+    font-size: 15px
+    transition: all 0.3s
+    &:hover
+      background-color: #4F8EF7
+      color: white
+@media screen and (max-width: 786px)
+  .infos
+    display: inherit
+  .info
+    margin-right: 0
+    margin-top: 10px
+  .info3
+    margin-top: 10px
+  .more-info
+    padding: 10px
