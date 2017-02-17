@@ -6,7 +6,7 @@ body
 .background
     width: 100%
     height: 500px
-    background-image: url('background.jpg')
+    background-image: url('background1.jpg')
     background-position: bottom
     background-repeat: no-repeat
     background-size: cover
@@ -56,7 +56,21 @@ body
     letter-spacing: 1px
     color: white
     margin-bottom: 5px
-  a
+  a:not(.btnlearn)
+    letter-spacing: 1px
+    position: relative
+    top: 20px
+    background-color: #4F8EF7
+    color: white
+    border: 2px solid #4F8EF7
+    border-radius: 2px
+    text-decoration: none
+    padding: 10px 20px
+    transition: 0.3s
+    &:hover
+      background-color: #4F8EF7
+      color: white
+  a.btnlearn
     letter-spacing: 1px
     position: relative
     top: 20px
@@ -67,9 +81,13 @@ body
     text-decoration: none
     padding: 10px 20px
     transition: 0.3s
+    margin-right: 5px
     &:hover
       background-color: white
       color: black
+@media screen and (max-width: 315px)
+  a
+    font-size: 12px
 @media screen and (min-width:700px)
   .heading-content
     img
@@ -91,7 +109,6 @@ body
   box-sizing: border-box
   background-color:#F5F6F7
   text-align: center
-  color: #4F8EF7
   h1
     font-weight: lighter
 .infos
@@ -106,6 +123,8 @@ body
   padding: 25px
   box-sizing: border-box
   transition: all 0.5s
+  p
+    color:#808080
   a
     text-decoration: none
     display: inherit
@@ -127,6 +146,8 @@ body
   border-radius: 5px
   padding: 25px
   box-sizing: border-box
+  p
+    color:#808080
   a
     text-decoration: none
     display: inherit
