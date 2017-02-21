@@ -60,23 +60,21 @@ body
     letter-spacing: 1px
     position: relative
     top: 20px
-    background-color: #4F8EF7
+    background-color: #529EFF
     color: white
-    border: 2px solid #4F8EF7
+    border: 2px solid #529EFF
     border-radius: 2px
     text-decoration: none
     padding: 10px 20px
     transition: 0.3s
     &:hover
-      background-color: white
-      color: #4F8EF7
-      border: solid white 2px
+      box-shadow: 1px 1px 30px black
   a.btnlearn
     letter-spacing: 1px
     position: relative
     top: 20px
-    color: white
-    background-color: none
+    color: #4A8BFC
+    background-color: white
     border: 2px solid white
     border-radius: 2px
     text-decoration: none
@@ -84,8 +82,7 @@ body
     transition: 0.3s
     margin-right: 5px
     &:hover
-      background-color: white
-      color: black
+      box-shadow: 1px 1px 30px black
 @media screen and (max-width: 315px)
   a
     font-size: 12px
@@ -105,6 +102,10 @@ body
       font-size: 28px
     p
       font-size: 13px
+.wef
+  margin: 0
+p.wefp
+  margin: 5px 0px 20px 0px
 .more-info
   width: 100%
   height: auto
@@ -114,6 +115,7 @@ body
   text-align: center
   h1
     font-weight: lighter
+    color: #008BFF
 .infos
   justify-content: center
   display: flex
@@ -125,24 +127,28 @@ body
   padding: 25px
   box-sizing: border-box
   transition: all 0.5s
+  border-radius: 5px
+  border: 2px solid #DEDEDE
   &:hover
-    box-shadow: 0px 0px 25px #888888
+    border: 2px solid #008BFF
   p
     color:#808080
   a
     text-decoration: none
     display: inherit
-    padding: 15px 20px
-    color: #4F8EF7
+    padding: 15px
+    color: white
+    background-color: #008BFF
     box-sizing: border-box
     border-radius: 3px
-    border: solid #4F8EF7 2px
     font-size: 15px
     transition: all 0.3s
     &:hover
       background-color: #4F8EF7
       color: white
 .info3
+  border: 2px solid #DEDEDE
+  border-radius: 5px
   font-size: 13px
   color: black
   background-color: white
@@ -151,23 +157,25 @@ body
   box-sizing: border-box
   transition: all 0.5s
   &:hover
-    box-shadow: 0px 0px 25px #888888
+    border: 2px solid #008BFF
   p
     color:#808080
   a
     text-decoration: none
     display: inherit
     padding: 15px 20px
-    color: #4F8EF7
+    color: white
+    background-color: #008BFF
     box-sizing: border-box
     border-radius: 3px
-    border: solid #4F8EF7 2px
     font-size: 15px
     transition: all 0.3s
     &:hover
       background-color: #4F8EF7
       color: white
 @media screen and (max-width: 786px)
+  .wef
+    margin-top: 10px
   .infos
     display: inherit
   .info
@@ -183,58 +191,3 @@ body
   width: 100%
   height: 5px
   background-color: #4F8EF7
-.projects
-  width: 100%
-  height: auto
-  padding: 30px
-  box-sizing: border-box
-  display: flex
-  justify-content: center
-  text-align: center
-  align-items: center
-  flex-direction: column
-  h1.projh
-    font-size: 15px
-    color: #CACCCD
-    font-weight: bold
-    letter-spacing: 1px
-.proinfo
-  width: 1050px
-.projinfo
-  width: 100%
-  margin-top: 20px
-  background-image: url("cafe.jpg")
-  background-position: center
-  background-size: cover
-  padding: 50px
-  box-sizing: border-box
-  border-radius: 3px
-  h1
-    margin: 10px
-    font-size: 20px
-    color: white
-    font-weight: lighter
-.hotel
-  margin-top: 10px
-  width: 49%
-  height: 300px
-  background-image: url("hotel.jpg")
-  background-position: center
-  background-size: cover
-  border-radius: 3px
-  float: left
-  display: flex
-  justify-content: center
-  align-items: center
-  text-align: center
-  flex-direction: column
-  h1
-    font-size: 20px
-    font-weight: lighter
-    color: white
-.house
-  margin-top: 10px
-  width: 50%
-  height: 300px
-  background-color: tomato
-  float: right
