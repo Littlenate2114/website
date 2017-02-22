@@ -1,13 +1,16 @@
+@font-face
+  font-family: myFirstFont
+  src: url(Gotham-Light.otf)
 *
-  font-family: 'Maven Pro', sans-serif
+  font-family: 'myFirstFont', sans-serif
 body
   margin: 0
   padding: 0
 .background
     width: 100%
     height: 500px
-    background-image: url('background1.jpg')
-    background-position: bottom
+    background-image: url('compback.jpg')
+    background-position: center
     background-repeat: no-repeat
     background-size: cover
     display: flex
@@ -19,6 +22,7 @@ body
   box-sizing: border-box
   color: #016cdd
   img
+    margin-top: 5px
     margin-left: 20px
   ul
     height: auto
@@ -29,19 +33,14 @@ body
     list-style-type: none
     display: inline
   li a
+    font-size: 13px
     text-decoration: none
     color: white
     padding: 10px 15px
     transition: all 0.3s
-    &:hover
-      border-bottom: #BEC3C7 solid 1px
-  li a.active
-    border-bottom: 1px solid white
-
 @media screen and (max-width: 700px)
   .navigation
     display: none
-
 .heading-content
   width: 100%
   height: auto
@@ -50,6 +49,7 @@ body
   text-align: center
   h1
     color: white
+    font-size: 40px
     margin-bottom: -10px
     letter-spacing: 1px
   p
@@ -60,10 +60,9 @@ body
     letter-spacing: 1px
     position: relative
     top: 20px
-    background-color: #529EFF
     color: white
+    background-color: #529EFF
     border: 2px solid #529EFF
-    border-radius: 2px
     text-decoration: none
     padding: 10px 20px
     transition: 0.3s
@@ -73,10 +72,8 @@ body
     letter-spacing: 1px
     position: relative
     top: 20px
-    color: #4A8BFC
-    background-color: white
+    color: white
     border: 2px solid white
-    border-radius: 2px
     text-decoration: none
     padding: 10px 20px
     transition: 0.3s
@@ -106,16 +103,19 @@ body
   margin: 0
 p.wefp
   margin: 5px 0px 20px 0px
+  color: #4A566B
+  font-size: 15px
 .more-info
   width: 100%
   height: auto
   padding: 30px
   box-sizing: border-box
-  background-color: #F5F6F7
+  background-color: #F6F7FA
   text-align: center
   h1
     font-weight: lighter
     color: #008BFF
+    margin-bottom: 7px
 .infos
   justify-content: center
   display: flex
@@ -138,13 +138,13 @@ p.wefp
     display: inherit
     padding: 15px
     color: white
-    background-color: #008BFF
+    background-color: #4F8EF7
     box-sizing: border-box
     border-radius: 3px
     font-size: 15px
     transition: all 0.3s
     &:hover
-      background-color: #4F8EF7
+      background-color:#008BFF
       color: white
 .info3
   border: 2px solid #DEDEDE
@@ -165,13 +165,13 @@ p.wefp
     display: inherit
     padding: 15px 20px
     color: white
-    background-color: #008BFF
+    background-color: #4F8EF7
     box-sizing: border-box
     border-radius: 3px
     font-size: 15px
     transition: all 0.3s
     &:hover
-      background-color: #4F8EF7
+      background-color: #008BFF
       color: white
 @media screen and (max-width: 786px)
   .wef
@@ -187,7 +187,3 @@ p.wefp
     padding: 10px
     h1
       font-size: 25px
-.pricing
-  width: 100%
-  height: 5px
-  background-color: #4F8EF7
